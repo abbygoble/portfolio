@@ -7,11 +7,11 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-</head>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <!-- establishes header structure -->
-    <header>
+    <header class="bg-primary">
         <!-- site title -->
         <h1 class="text-uppercase">old fart clothing company</h1>
         <!-- site slogan -->
@@ -102,39 +102,36 @@
         </div>
     </div>
     <!-- container for green background -->
-    <div>
+    <div class="bg-primary">
         <h3>Check out our Instagram</h3>
-    </div>
-    <!-- container for instagram images -->
-    <div>
-        <img src="images/oldcouple.jpg" alt="cute old couple">
-        <img src="images/windbreaker.jpg" alt="windbreaker">
-        <img src="images/oldman.jpg" alt="old man sitting by ocean">
-        <img src="images/jeanjacket.jpg" alt="jean jacket">
+        <!-- container for instagram images -->
+        <div>
+            <img src="images/oldcouple.jpg" class="img-fluid" alt="cute old couple">
+            <img src="images/windbreaker.jpg" class="img-fluid" alt="windbreaker">
+            <img src="images/oldman.jpg" class="img-fluid" alt="old man sitting by ocean">
+            <img src="images/jeanjacket.jpg" class="img-fluid" alt="jean jacket">
+        </div>
     </div>
     <!-- establishes footer structure -->
     <footer>
         <!-- container for blue backgorund -->
-        <div>
+        <div class="bg-secondary">
             <!-- logo -->
             <img>
              <!-- container for footer nav -->
-            <div>
-                <!-- header for footer nav -->
-                <h3>Take me There</h3>
-                <!-- footer nav -->
-                <ul class="list-unstyled">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+             <nav>
+                <ul class="nav list-unstyled">
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="shop.html">shop</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">about us</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">contact us</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
         <!-- container for green copyright -->
-        <div>
+        <div class="bg-warning">
             <!-- copyright info -->
-            <p>Copyright Old Fart Clothing Company</p>
+            <p>Copyright © 2023 Old Fart Clothing Company</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>

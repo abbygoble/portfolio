@@ -17,11 +17,11 @@
     </header>
     <!-- establishes main navigation -->
     <nav>
-        <ul class="list-unstyled">
-            <li><a class="text-uppercase" href="index.html">home</a></li>
-            <li><a class="text-uppercase" href="shop.html">shop</a></li>
-            <li><a class="text-uppercase" href="about.html">about us</a></li>
-            <li><a class="text-uppercase" href="#contact">contact us</a></li>
+        <ul class="nav list-unstyled">
+            <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">home</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="shop.html">shop</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">about us</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">contact us</a></li>
         </ul>
     </nav>
     <!-- establishes container for content width -->
@@ -29,7 +29,7 @@
         <!-- structures blue card -->
         <div>
             <div>
-                <img>
+                <img src="images/mike.jpg" class="img-fluid" alt="co-founder mike goble">
             </div>
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt commodi, sint amet nulla sunt suscipit quo possimus vero non vel, minus ipsa cupiditate eveniet iure sapiente cum, explicabo impedit necessitatibus!</p>
@@ -37,10 +37,10 @@
         </div>
         <h3>Available At</h3>
         <div>
-            <img>
-            <img>
-            <img>
-            <img>
+            <img src="images/Canadian_Tire_Logo.svg.png" class="img-fluid" alt="canadian tire logo">
+            <img src="images/cottage-toys-large-2_1200x1200.png.webp" class="img-fluid" alt="cottage toys logo">
+            <img src="images/hb.jpeg" class="img-fluid" alt="hudson bay logo">
+            <img src="images/bps.jpeg" class="img-fluid" alt="bass pro shop">
         </div>
         <div id="contact">
             <h4>Get in Touch</h4>
@@ -72,16 +72,18 @@
             </div>
             <div>
                 <h4>Take Me There</h4>
-                <ul class="list-unstyled">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                </ul>
+                <nav>
+                    <ul class="nav list-unstyled">
+                        <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">home</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase" href="shop.html">shop</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">about us</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">contact us</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div>
-            <p>Copyright 2023 Old Fart Clothing Company</p>
+            <p>Copyright © 2023 Old Fart Clothing Company</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
