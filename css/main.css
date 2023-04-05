@@ -1,3 +1,16 @@
+:root {
+    --bs-primary: #EFF6E0;
+    --bs-primary-rgb: 239,246,224;
+    --bs-secondary: #AEC3B0;
+    --bs-secondary-rgb:174, 195, 176;
+    --bs-warning: #00465B;
+    --bs-warning-rgb: 0, 70, 91
+}
+
+.josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 @media only screen and (min-width:768px) {
     header {
         background-color: white !important;
