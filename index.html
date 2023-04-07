@@ -16,9 +16,9 @@
     <!-- establishes header structure -->
     <header class="bg-primary">
         <!-- site title -->
-        <h1 class="text-uppercase text-center josefin">old fart clothing company</h1>
+        <h1 class="text-uppercase text-center pt-3 josefin">old fart clothing company</h1>
         <!-- site slogan -->
-        <h2 class="text-uppercase text-center josefin">wiser. kinder. better.</h2>
+        <h2 class="text-uppercase text-center pb-3 josefin">wiser. kinder. better.</h2>
     </header>
     <!-- establishes main navigation -->
     <nav class="navbar">
@@ -56,28 +56,52 @@
         <div class="row">
             <!--wallet -->
             <div class="col">
-                <img src="images/wallet.jpg" class="img-fluid" alt="old fart signature wallet">
+                <picture>
+                    <source srcset="images/wallet-small.jpg,
+                    images/wallet-medium 2x,
+                    images/wallet-large 3x"
+                    media="(max-width: 390px">
+                    <img src="images/wallet-small.jpg" class="img-fluid" alt="old fart signature wallet">
+                </picture>
                 <h3>Wallet</h3>
                 <h3>$55.00</h3>
                 <i class="bi bi-cart3"></i>
             </div>
             <!-- windbreaker -->
             <div class="col">
-                <img src="images/windbreaker.jpg" class="img-fluid" alt="windbreaker in black">
+                <picture>
+                    <source srcset="images/windbreaker-m-small.jpg,
+                    images/windbreaker-m-medium.jpg 2x,
+                    images/windbreaker-m-large.jpg 3x"
+                    media="(max-width: 390px">                
+                    <img src="images/windbreaker-m-small.jpg" class="img-fluid" alt="windbreaker in black">
+                </picture>
                 <h3>Windbreaker</h3>
                 <h3>$130.00</h3>
                 <i class="bi bi-cart3"></i>
             </div>
-            <!--  -->
+            <!-- white tee shirt -->
             <div class="col">
-                <img src="images/whitetee1.jpeg" class="img-fluid" alt="basic graphic tee">
+                <picture>
+                    <source srcset="images/whitetee-m-small.jpg,
+                    images/whitetee-m-medium.jpg 2x,
+                    images/whitetee-m-large.jpg 3x"
+                    media="(max-width: 390px">
+                    <img src="images/whitetee-m-small.jpeg" class="img-fluid" alt="basic graphic tee">
+                </picture>
                 <h3>Basic Graphic Tee</h3>
                 <h3>$35.00</h3>
                 <i class="bi bi-cart3"></i>
             </div>
-            <!--  -->
+            <!-- green t-shirts -->
             <div class="col">
-                <img src="images/greentees.jpg" class="img-fluid" alt="green tees on rack">
+                <picture>
+                    <source srcset="images/greentees-m-small.jpg,
+                    images/greentees-m-medium.jpg 2x,
+                    images/greentees-m-large.jpg 3x"
+                    media="(max-width: 390px)">
+                    <img src="images/greentees-m-small.jpg" class="img-fluid" alt="green tees on rack">
+                </picture>
                 <h3>clothing item</h3>
                 <h3>price</h3>
                 <i class="bi bi-cart3"></i>
