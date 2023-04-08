@@ -4,7 +4,9 @@
     --bs-secondary: #AEC3B0;
     --bs-secondary-rgb:174, 195, 176;
     --bs-warning: #00465B;
-    --bs-warning-rgb: 0, 70, 91
+    --bs-warning-rgb: 0, 70, 91;
+    --bs-info: #598392;
+    --bs-info-rgb:89, 131, 146;
 }
 
 .josefin {
@@ -16,3 +18,6 @@
         background-color: white !important;
     }
 }
+
+/* @media screen and (min-width: 1920px) {
+     */
