@@ -56,16 +56,16 @@
     </nav>
 
     <section class="d-none d-md-block">
-        <div class="container">
-            <div class="row">
-                <div class="col bg-warning">
+        <div class="container container-fluid p-0 m-0">
+            <div class="row p-0 m-0">
+                <div class="col-6 bg-warning">
                     <p class="text-center text-white p-3">OLD FART CLOTHING COMPANY SPECIALIZES IN CLOTHING AND NOVELTY ITEMS TARGETED TOWARDS AN OLDER CROWD BECAUSE WE GET IT - YOU WANT COMFORT, QUIALITY, AND TO LEAVE A POSITIVE IMPACT ON THE WORLD</p> 
                 </div>
-                <div class="col">
+                <div class="col-6 p-0 m-0">
                     <img src="images/mike.jpg" class="img-fluid pb-3" alt="co-founder mike goble">
                 </div>
             </div>
-            <div class="row">
+            <div class="row p-0 m-0">
                 <div class="col-3 bg-secondary"></div>
                 <div class="col-6 bg-white">
                     <p>Sitting at the kitchen table one day, my dad decided he was fed up.  “Listen, I’m an old fart, I don’t care about some fancy logo on my shirt.  All I want is for my clothes to be good quality, made locally, and to make a difference in the world.”  And with that an idea was born.
@@ -74,11 +74,11 @@
                 </div>
                 <div class="col-3 bg-primary"></div>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row p-0 m-0">
+                <div class="col p-0 m-0">
                     <img src="images/papa.JPG" alt="papa" class="img-fluid pb-3"> 
                 </div>
-                <div class="col bg-info">
+                <div class="col p-0 m-0 bg-info">
                     <h4 class="josefin text-center text-white pt-3">Dad's Rules</h4>
                     <p class="p-3 text-white">1. Always do your share and a little extra – no excuses & no complaining. <br>
                         2. There is no occasion that gumdrops or cheese curds can’t improve. <br>
@@ -96,16 +96,18 @@
         </div>
     </section>
     <!-- establishes container for content width -->
-    <div class="p-3 d-block d-md-none">
-        <!-- structures blue card -->
-        <div class="bg-info p-3">
-            <div>
-                <img src="images/mike.jpg" class="img-fluid pb-3" alt="co-founder mike goble">
+    <div class="p-3">
+        <section class="d-block d-md-none">
+            <!-- structures blue card -->
+            <div class="bg-info p-3">
+                <div>
+                    <img src="images/mike.jpg" class="img-fluid pb-3" alt="co-founder mike goble">
+                </div>
+                <div class="bg-white">
+                    <p class="text-center p-3">OLD FART CLOTHING COMPANY SPECIALIZES IN CLOTHING AND NOVELTY ITEMS TARGETED TOWARDS AN OLDER CROWD BECAUSE WE GET IT - YOU WANT COMFORT, QUIALITY, AND TO LEAVE A POSITIVE IMPACT ON THE WORLD</p>
+                </div>
             </div>
-            <div class="bg-white">
-                <p class="text-center p-3">OLD FART CLOTHING COMPANY SPECIALIZES IN CLOTHING AND NOVELTY ITEMS TARGETED TOWARDS AN OLDER CROWD BECAUSE WE GET IT - YOU WANT COMFORT, QUIALITY, AND TO LEAVE A POSITIVE IMPACT ON THE WORLD</p>
-            </div>
-        </div>
+        </section>
         <h3 class="josefin text-center text-uppercase pt-3">Available At</h3>
         <div class="container">
             <div class="row">
@@ -124,20 +126,21 @@
                 </div>
             </div>
         </div>
-        <div id="contact" class="bg-primary">
-            <h4 class="josefin text-center p-3">Get in Touch</h4>
-            <button class="btn btn-warning btn-large btn-block">Contact Us</button>
-        </div>
-        <!-- structures green background -->
-        <div class="bg-secondary d-none d-md-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5">
-                        <img src="images/graphictee.jpg" class="img-fluid" alt="graphic tee">
-                    </div>
-                    <div class="col-7 bg-white">
-                        <!-- establishes form format -->
-                        <form role="form" action="thanks.html" method="get">
+        <section>
+            <div id="contact" class="bg-primary">
+                <h4 class="josefin text-center p-3">Get in Touch</h4>
+                <button class="btn btn-warning btn-large btn-block">Contact Us</button>
+            </div>
+            <!-- structures green background -->
+            <div class="bg-secondary d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="images/graphictee.jpg" class="img-fluid" alt="graphic tee">
+                        </div>
+                        <div class="col-7 bg-white">
+                            <!-- establishes form format -->
+                            <form role="form" action="thanks.html" method="get">
                                 <label for="fullname">Name</label> <br>
                                 <input id="fullname" placeholder="John Doe"> <br>
                                 <label for="email">Email</label> <br>
@@ -146,41 +149,42 @@
                                 <input id="tel" placeholder="(888)888-8888"> <br>
                                 <label for="message">Your message</label> <br>
                                 <textarea id="message"></textarea>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- structures green card -->
-        <div class="bg-secondary p-3 m-2">
-            <div>
-                <img src="images/papa.JPG" alt="papa" class="img-fluid pb-3">
+            <!-- structures green card -->
+            <div class="bg-secondary p-3 m-2">
+                <div>
+                    <img src="images/papa.JPG" alt="papa" class="img-fluid pb-3">
+                </div>
+                <div class="bg-white p-3">
+                    <p>Sitting at the kitchen table one day, my dad decided he was fed up.  “Listen, I’m an old fart, I don’t care about some fancy logo on my shirt.  All I want is for my clothes to be good quality, made locally, and to make a difference in the world.”  And with that an idea was born.</p>
+                    <p>After many years of hmm-ing and hah-ing, Old Fart Clothing Company finally made it past dinner talk dreaming and became a company determined to provide the best for its customers. </p> 
+                </div>
             </div>
-            <div class="bg-white p-3">
-                <p>Sitting at the kitchen table one day, my dad decided he was fed up.  “Listen, I’m an old fart, I don’t care about some fancy logo on my shirt.  All I want is for my clothes to be good quality, made locally, and to make a difference in the world.”  And with that an idea was born.</p>
-                <p>After many years of hmm-ing and hah-ing, Old Fart Clothing Company finally made it past dinner talk dreaming and became a company determined to provide the best for its customers. </p> 
+            <!-- structures blue card -->
+            <div class="bg-warning p-3 m-2">
+                <div>
+                    <img>
+                </div>
+                <div class="bg-white">
+                    <h4 class="josefin text-center pt-3">Dad's Rules</h4>
+                        <p class="p-3">1. Always do your share and a little extra – no excuses & no complaining. <br>
+                        2. There is no occasion that gumdrops or cheese curds can’t improve. <br>
+                        3. Embrace your grandkids without judgement – play dress-up, have tea parties, draw pictures, skate, camp, hike, and love them …  actively and passionately. <br>
+                        4. Don’t waste any time bragging about the good things you are doing … if they really are good things you won’t need to mention them … others will! <br>
+                        5. Family Matters – make sure your actions reflect that. <br>
+                        6. Having great friendships starts with being one yourself! <br>
+                        7. Choose a partner in life who makes you a better person than you could ever be on your own … and then be faithful to them. <br>
+                        8. It’s okay to cry when you need to … but save it for really special occasions. <br>
+                        9. Brothers and sisters stay precious to you … even after you have grown up and went your separate ways.
+                        <br>
+                        10. It’s easy to make new acquaintances … strike up a conversation whenever and wherever you can … you just might enrich the lives of others. </p>
+                </div>
             </div>
-        </div>
-        <!-- structures blue card -->
-        <div class="bg-warning p-3 m-2">
-            <div>
-                <img>
-            </div>
-            <div class="bg-white">
-                <h4 class="josefin text-center pt-3">Dad's Rules</h4>
-                <p class="p-3">1. Always do your share and a little extra – no excuses & no complaining. <br>
-                    2. There is no occasion that gumdrops or cheese curds can’t improve. <br>
-                    3. Embrace your grandkids without judgement – play dress-up, have tea parties, draw pictures, skate, camp, hike, and love them …  actively and passionately. <br>
-                    4. Don’t waste any time bragging about the good things you are doing … if they really are good things you won’t need to mention them … others will! <br>
-                    5. Family Matters – make sure your actions reflect that. <br>
-                    6. Having great friendships starts with being one yourself! <br>
-                    7. Choose a partner in life who makes you a better person than you could ever be on your own … and then be faithful to them. <br>
-                    8. It’s okay to cry when you need to … but save it for really special occasions. <br>
-                    9. Brothers and sisters stay precious to you … even after you have grown up and went your separate ways.
-                    <br>
-                    10. It’s easy to make new acquaintances … strike up a conversation whenever and wherever you can … you just might enrich the lives of others. </p>
-            </div>
-        </div>
+        </section>
     </div>
     <footer>
         <div>
