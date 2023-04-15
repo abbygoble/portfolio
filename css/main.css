@@ -14,10 +14,7 @@
 }
 
 @media only screen and (min-width:768px) {
-    header {
+    #header {
         background-color: white !important;
     }
 }
-
-/* @media screen and (min-width: 1920px) {
-     */

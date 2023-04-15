@@ -13,12 +13,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-primary">
+    <div class="d-none d-md-block bg-primary">
+        <div class="d-flex justify-content-end">
+            <i class="bi bi-facebook p-1"></i>
+            <i class="bi bi-instagram p-1"></i>
+            <i class="bi bi-tiktok p-1"></i>
+        </div>
+    </div>
+    <!-- establishes header structure -->
+    <header id="header" class="bg-primary">
+        <!-- site title -->
         <h1 class="text-uppercase text-center pt-3 josefin">old fart clothing company</h1>
+        <!-- site slogan -->
         <h2 class="text-uppercase text-center pb-3 josefin">wiser. kinder. better.</h2>
     </header>
     <!-- establishes main navigation -->
-    <nav class="navbar">
+    <nav class="navbar d-md-none">
         <div class="container-fluid">
             <input type="text" placeholder="search">
             <i class="bi bi-cart3"></i>
@@ -27,118 +37,135 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="nav list-unstyled">
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">home</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="shop.html">shop</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">about us</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">contact us</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="shop.html">shop</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="about.html">about us</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="#contact">contact us</a></li>
  
                 </ul>
             </div>
        </div>
     </nav>
+    <nav class="bg-primary d-none d-md-block">
+        <ul class="nav d-flex justify-content-evenly align-items-center">
+            <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="index.html">home</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="shop.html">shop</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="about.html">about us</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="#contact">contact us</a></li>
+            <li><input class="m-2" type="text" placeholder="search"><i class="bi bi-search"></i></li>
+        </ul>
+    </nav>
     <div class="container">
         <div class="row">
-            <div class="col col-md-3">
+            <div class="col-6 col-md-3">
                 <picture>
-                    <source srcset="images/male-model-320.jpg,
-                                    images/male-model-640.jpg 2x,
-                                    images/male-model-960.jpg 3x"
+                    <source srcset="images/male-model-m-small.jpg,
+                                    images/male-model-m-medium.jpg 2x,
+                                    images/male-model-m-large.jpg 3x"
                             media="(min-width: 320px)"/>
-                
-                    <source srcset="images/male-model-640"
-                            media="(min-width: 640px)"/>
-                
-                    <source srcset="images/male-model-960"
-                            media="min-width: 960px)" />
-                    <img src="images/male-model-320.jpg"
-                         alt="black long sleeve">
+                            <img src="images/male-model-m-small.jpg"
+                         alt="black long sleeve"> 
                 </picture>
                 <h3>Long Sleeve Shirt</h3>
                 <h4>$35.00</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
             </div>
-            <div class="col col-md-3">
-                <img src="images/graphictee.jpg" class="img-fluid" alt="graphic tee">
+            <div class="col-6 col-md-3">
+                <picture>
+                    <source srcset="images/graphictee-m-small.jpg,images/graphictee-m-large.jpg 2x"
+                    media="(min-width: 320px)">
+                    <img src="images/graphictee-m-small.jpg" class="img-fluid" alt="graphic tee">
+                </picture>
                 <h3>Graphic Tee</h3>
                 <h4>$25.00</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
             </div>
-        </div>
-        <!-- <div class="row"> -->
-            <div class="col col-md-3">
-                <img src="images/graphictee.jpg" class="img-fluid" alt="graphic tee">
+            <div class="col-6 col-md-3">
+                <picture>
+                    <source srcset="images/graphictee-m-small.jpg,images/graphictee-m-large.jpg 2x"
+                    media="(min-width: 320px)">
+                    <img src="images/graphictee-m-small.jpg" class="img-fluid" alt="graphic tee">
+                </picture>
                 <h3>Graphic Tee</h3>
                 <h4>$25.00</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
             </div>
-            <div class="col col-md-3">
-                <img src="images/graphictee.jpg" class="img-fluid" alt="graphic tee">
+            <div class="col-6 col-md-3">
+                <picture>
+                    <source srcset="images/graphictee-m-small.jpg,images/graphictee-m-large.jpg 2x"
+                    media="(min-width: 320px)">
+                    <img src="images/graphictee-m-small.jpg" class="img-fluid" alt="graphic tee">
+                </picture>
                 <h3>Graphic Tee</h3>
                 <h4>$25.00</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <img src="images/coffeecup.jpg" class="img-fluid" alt="old fart mug">
                 <h3>Signature Old Fart Mug</h3>
                 <h4>$15</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
             </div>
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <img src="images/wallet.jpg" class="img-fluid" alt="wallet">
                 <h3>Wallet</h3>
                 <h4>Price</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
             </div>
         </div>
     </div>
     <img src="images/popup.jpg" class="img-fluid" srcset="old fart pop up store">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <img src="images/oldmanapron.jpg" class="img-fluid" alt="apron">
                 <h3>Barbecue Apron</h3>
                 <h4>$20.00</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
             </div>
-            <div class="col">
+            <div class="col-6 col-md-3">
                 <img src="images/white-baseball-hat.jpg" class="img-fluid" alt="white baseball hat">
                 <h3>Baseball Hat</h3>
                 <h4>$15.00</h4>
-                <!-- icon -->
+                <i class="bi bi-cart3"></i>
+            </div>
+            <div class="col-6 col-md-3">
+                <img>
+                <h3>Long Coat</h3>
+                <h4>$ 150.00</h4>
+                <i class="bi bi-cart3"></i>
+            </div>
+            <div class="col-6 col-md-3">
+                <img>
+                <h3>Sticker</h3>
+                <h4>Complimentary with purchase</h4>
+                <i class="bi bi-cart3"></i>
+            </div>
+            <div class="col-6 col-md-3">
+                <img>
+                <h3>Button down</h3>
+                <h4>$ 40.00</h4>
+                <i class="bi bi-cart3"></i>
+            </div>
+            <div class="col-6 col-md-3">
+                <img>
+                <h3>Cozy Pants</h3>
+                <h4>$ 65.00</h4>
+                <i class="bi bi-cart3"></i>
+            </div>
+            <div class="col-6 col-md-3">
+                <img>
+                <h3>Golf Short</h3>
+                <h4>$ 50.00</h4>
+                <i class="bi bi-cart3"></i>
+            </div>
+            <div class="col-6 col-md-3">
+                <img>
+                <h3>Beer Koozie</h3>
+                <h4>$ 7.00</h4>
+                <i class="bi bi-cart3"></i>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <img>
-                <h3>Item</h3>
-                <h4>Price</h4>
-                <!-- icon -->
-            </div>
-            <div class="col">
-                <img>
-                <h3>Item</h3>
-                <h4>Price</h4>
-                <!-- icon -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img>
-                <h3>Item</h3>
-                <h4>Price</h4>
-                <!-- icon -->
-            </div>
-            <div class="col">
-                <img>
-                <h3>Item</h3>
-                <h4>Price</h4>
-                <!-- icon -->
-            </div>
-        </div>
-
-
     </div>
         <!-- establishes footer structure -->
         <footer>
@@ -146,20 +173,28 @@
             <div class="bg-warning">
                 <!-- logo -->
                 <img>
+                <div>
+                    <h4><a class="text-white" href="#header">Back to Top</a></h4>
+                    <img>
+                    <img>
+                    <img>
+                </div>
+
+                <h4 class="text-white">Take Me There</h4>
                  <!-- container for footer nav -->
                  <nav>
                     <ul class="nav list-unstyled">
-                        <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">home</a></li>
-                        <li class="nav-item"><a class="nav-link text-uppercase" href="shop.html">shop</a></li>
-                        <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">about us</a></li>
-                        <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">contact us</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="index.html">home</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="shop.html">shop</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="about.html">about us</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="#contact">contact us</a></li>
                     </ul>
                 </nav>
             </div>
             <!-- container for green copyright -->
             <div class="bg-secondary">
                 <!-- copyright info -->
-                <p class="josefin">Copyright © 2023 Old Fart Clothing Company</p>
+                <p class="d-flex justify-content-end p-2">Copyright © 2023 Old Fart Clothing Company</p>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
