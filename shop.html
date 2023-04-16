@@ -55,16 +55,19 @@
             <li><input class="m-2" type="text" placeholder="search"><i class="bi bi-search"></i></li>
         </ul>
     </nav>
-    <div class="container">
+    <div class="container-flex">
         <div class="row">
             <div class="col-6 col-md-3">
                 <picture>
-                    <source srcset="images/male-model-m-small.jpg,
-                                    images/male-model-m-medium.jpg 2x,
-                                    images/male-model-m-large.jpg 3x"
-                            media="(min-width: 320px)"/>
-                            <img src="images/male-model-m-small.jpg"
-                         alt="black long sleeve"> 
+                    <source srcset="images/cheerful-senior-man-long-sleeve-black-tee-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/cheerful-senior-man-long-sleeve-black-tee-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/cheerful-senior-man-long-sleeve-black-tee-432_x_704.jpg"
+                         alt="black long sleeve shirt"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
                 </picture>
                 <h3>Long Sleeve Shirt</h3>
                 <h4>$35.00</h4>
@@ -72,9 +75,15 @@
             </div>
             <div class="col-6 col-md-3">
                 <picture>
-                    <source srcset="images/graphictee-m-small.jpg,images/graphictee-m-large.jpg 2x"
-                    media="(min-width: 320px)">
-                    <img src="images/graphictee-m-small.jpg" class="img-fluid" alt="graphic tee">
+                    <source srcset="images/graphictee-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/graphictee-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/graphictee-432_x_704.jpg"
+                         alt="old fart graphic tee"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
                 </picture>
                 <h3>Graphic Tee</h3>
                 <h4>$25.00</h4>
@@ -82,85 +91,212 @@
             </div>
             <div class="col-6 col-md-3">
                 <picture>
-                    <source srcset="images/graphictee-m-small.jpg,images/graphictee-m-large.jpg 2x"
-                    media="(min-width: 320px)">
-                    <img src="images/graphictee-m-small.jpg" class="img-fluid" alt="graphic tee">
+                    <source srcset="images/graphictee-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/graphictee-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/graphictee-432_x_704.jpg"
+                         alt="old fart graphic tee"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
                 </picture>
+                <h3>Graphic Tee</h3>
+                <h4>$25.00</h4>
+                <i class="bi bi-cart3"></i>
+            </div>
+            <div class="col-6 col-md-3">
+                    <picture>
+                        <source srcset="images/graphictee-166_x_254.jpg"
+                                media="(max-width: 166px)">
+                        <source srcset="images/graphictee-432_x_704.jpg"
+                                media="(max-width: 432px)">
+                        <img src="images/graphictee-432_x_704.jpg"
+                             alt="old fart graphic tee"
+                             class="img-fluid"
+                             sizes="(max-width: 166px) 50vw,
+                             (max-width: 432px) 25vw">
+                    </picture>
                 <h3>Graphic Tee</h3>
                 <h4>$25.00</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
                 <picture>
-                    <source srcset="images/graphictee-m-small.jpg,images/graphictee-m-large.jpg 2x"
-                    media="(min-width: 320px)">
-                    <img src="images/graphictee-m-small.jpg" class="img-fluid" alt="graphic tee">
+                    <source srcset="images/cup-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/cup-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/cup-432_x_704.jpg"
+                         alt="old fart mug"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
                 </picture>
-                <h3>Graphic Tee</h3>
-                <h4>$25.00</h4>
-                <i class="bi bi-cart3"></i>
-            </div>
-            <div class="col-6 col-md-3">
-                <img src="images/coffeecup.jpg" class="img-fluid" alt="old fart mug">
                 <h3>Signature Old Fart Mug</h3>
                 <h4>$15</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img src="images/wallet.jpg" class="img-fluid" alt="wallet">
+                <picture>
+                    <source srcset="images/wallet-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/wallet-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/wallet-432_x_704.jpg"
+                         alt="old fart wallet"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Wallet</h3>
                 <h4>Price</h4>
                 <i class="bi bi-cart3"></i>
             </div>
+            <div class="col-6 d-none d-md-block">
+                <picture>
+                    <source srcset="images/popup-897_x_818.jpg"
+                            media="(max-width: 897px)">
+                    <source srcset="images/popup-1794_x_1636.jpg"
+                            media="(max-width: 1794px)">
+                    <img src="images/popup-897_x_818.jpg"
+                         alt="pop up"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
+            </div>
         </div>
     </div>
-    <img src="images/popup.jpg" class="img-fluid" srcset="old fart pop up store">
-    <div class="container">
+    <picture>
+        <img src="images/popup.jpg" class="img-fluid d-block d-md-none" srcset="old fart pop up store">
+    </picture>
+    <div class="container-fluid m-3">
         <div class="row">
             <div class="col-6 col-md-3">
-                <img src="images/oldmanapron.jpg" class="img-fluid" alt="apron">
+                <picture>
+                    <source srcset="images/oldmanapron-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/oldmanapron-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/oldmanapron-432_x_704.jpg"
+                         alt="old fart apron"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Barbecue Apron</h3>
                 <h4>$20.00</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img src="images/white-baseball-hat.jpg" class="img-fluid" alt="white baseball hat">
+                <picture>
+                    <source srcset="images/white-baseball-hat-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/white-baseball-hat-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/white-baseball-hat-432_x_704.jpg"
+                         alt="old fart baseball hat"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Baseball Hat</h3>
                 <h4>$15.00</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img>
+                <picture>
+                    <source srcset="images/long-coat-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/long-coat-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/long-coat-432_x_704.jpg"
+                         alt="long Coat"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Long Coat</h3>
                 <h4>$ 150.00</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img>
+                <picture>
+                    <source srcset="images/sticker-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/sticker-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/sticker-432_x_704.jpg"
+                         alt="old fart sticker"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Sticker</h3>
                 <h4>Complimentary with purchase</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img>
+                <picture>
+                    <source srcset="images/old-men-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/old-men-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/old-men-432_x_704.jpg"
+                         alt="button down"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Button down</h3>
                 <h4>$ 40.00</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img>
+                <picture>
+                    <source srcset="images/cozy-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/cozy-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/cozy-432_x_704.jpg"
+                         alt="old fart cozy pants"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Cozy Pants</h3>
                 <h4>$ 65.00</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img>
+                <picture>
+                    <source srcset="images/shorts-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/horts-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/shorts-432_x_704.jpg"
+                         alt="old fart golf shorts"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Golf Short</h3>
                 <h4>$ 50.00</h4>
                 <i class="bi bi-cart3"></i>
             </div>
             <div class="col-6 col-md-3">
-                <img>
+                <picture>
+                    <source srcset="images/koozie-166_x_254.jpg"
+                            media="(max-width: 166px)">
+                    <source srcset="images/koozie-432_x_704.jpg"
+                            media="(max-width: 432px)">
+                    <img src="images/koozie-432_x_704.jpg"
+                         alt="old fart beer koozie"
+                         class="img-fluid"
+                         sizes="(max-width: 166px) 50vw,
+                         (max-width: 432px) 25vw">
+                </picture>
                 <h3>Beer Koozie</h3>
                 <h4>$ 7.00</h4>
                 <i class="bi bi-cart3"></i>

@@ -21,14 +21,14 @@
         </div>
     </div>
     <!-- establishes header structure -->
-    <header id="header" class="bg-primary">
+    <header id="header" class="bg-primary" role="banner">
         <!-- site title -->
         <h1 class="text-uppercase text-center pt-3 josefin">old fart clothing company</h1>
         <!-- site slogan -->
         <h2 class="text-uppercase text-center pb-3 josefin">wiser. kinder. better.</h2>
     </header>
     <!-- establishes main navigation -->
-    <nav class="navbar d-md-none">
+    <nav class="navbar d-md-none" role="navigation">
         <div class="container-fluid">
             <input type="text" placeholder="search">
             <i class="bi bi-cart3"></i>
@@ -46,7 +46,7 @@
             </div>
        </div>
     </nav>
-    <nav class="bg-primary d-none d-md-block">
+    <nav class="bg-primary d-none d-md-block" role="navigation">
         <ul class="nav d-flex justify-content-evenly align-items-center">
             <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="index.html">home</a></li>
             <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="shop.html">shop</a></li>
@@ -67,12 +67,14 @@
     <div>
         <img src="images/of2.png" class="img-fluid" alt="forever after all anniversary sale">
     </div>
+    <h2 class="text-uppercase josefin d-none d-md-block">featured products</h2>
+    <p class="d-none d-lg-block">Take a look at our Signature Products</p>
     <!-- contains items for sale -->
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid p-0 m-0">
+        <div class="row p-0 m-0">
             <!--wallet -->
-            <div class="col">
-                <picture>
+            <div class="col-3 p-0 m-0">
+                <picture class="m-0 p-0">
                     <source srcset="images/wallet-small.jpg,
                     images/wallet-medium 2x,
                     images/wallet-large 3x"
@@ -84,7 +86,7 @@
                 <i class="bi bi-cart3"></i>
             </div>
             <!-- windbreaker -->
-            <div class="col">
+            <div class="col-3 p-0 m-0">
                 <picture>
                     <source srcset="images/windbreaker-m-small.jpg,
                     images/windbreaker-m-medium.jpg 2x,
@@ -97,7 +99,7 @@
                 <i class="bi bi-cart3"></i>
             </div>
             <!-- white tee shirt -->
-            <div class="col">
+            <div class="col p-0">
                 <picture>
                     <source srcset="images/whitetee-m-small.jpg,
                     images/whitetee-m-medium.jpg 2x,
@@ -110,7 +112,7 @@
                 <i class="bi bi-cart3"></i>
             </div>
             <!-- green t-shirts -->
-            <div class="col">
+            <div class="col p-0">
                 <picture>
                     <source srcset="images/greentees-m-small.jpg,
                     images/greentees-m-medium.jpg 2x,
@@ -125,7 +127,7 @@
         </div>
         <div class="row">
             <!-- crewneck -->
-            <div class="col">
+            <div class="col p-0">
                 <picture>
                     <source srcset="images/crewneck-m-small.jpg,
                     images/crewneck-m-medium.jpg 2x,
@@ -138,7 +140,7 @@
                 <i class="bi bi-cart3"></i>
             </div>
             <!-- button down shirts -->
-            <div class="col">
+            <div class="col p-0">
                 <picture>
                     <source srcset="images/buttons-m-small.jpg,
                     images/buttons-m-medium.jpg 2x,
@@ -151,7 +153,7 @@
                 <i class="bi bi-cart3"></i>
             </div>
             <!--baseball hats -->
-            <div class="col">
+            <div class="col p-0">
                 <picture>
                     <source srcset="images/hats-m-small.jpg,
                     images/hats-m-medium.jpg 2x,
@@ -163,11 +165,9 @@
                 <i class="bi bi-cart3"></i>
             </div>
             <!-- vests -->
-            <div class="col">
+            <div class="col p-0">
                 <picture>
-                    <source srcset="images/vest-m-small.jpg, 
-                    images/vest-m-medium.jpg 2x,
-                    images/vest-m-large.jpg 3x"
+                    <source srcset="images/vest-m-small.jpg"
                     media="(max-width: 390px)">
                 </picture>
                 <img src="images/vest-m-small.jpg" class="img-fluid" alt="black puffer vest">
@@ -181,9 +181,9 @@
     <div class="bg-primary">
         <h3 class="text-center josefin">Check out our Instagram</h3>
         <!-- container for instagram images -->
-        <div class="container">
-            <div class="row">
-                <div class="col">
+        <div class="container-fluid p-0 m-0">
+            <div class="row no-gutters">
+                <div class="col-3 p-0 m-0">
                     <picture>
                         <source srcset="images/oldcouple-m-small.jpg,
                         images/oldcouple-m-medium.jpg 2x, 
@@ -192,7 +192,7 @@
                         <img src="images/oldcouple-m-small.jpg" class="img-fluid" alt="cute old couple">
                     </picture>
                 </div>
-                <div class="col">
+                <div class="col-3 p-0 m-0">
                     <picture>
                         <source srcset="images/windbreaker-square-m-small.jpg,
                         images/windbreaker-square-m-medium.jpg 2x,
@@ -201,7 +201,7 @@
                         <img src="images/windbreaker-square-m-small.jpg" class="img-fluid" alt="windbreaker in black">
                     </picture>
                 </div>
-                <div class="col">
+                <div class="col-3 p-0 m-0">
                     <picture>
                         <source srcset="images/oldman-m-small.jpg,
                         images/oldman-m-medium.jpg 2x, 
@@ -210,7 +210,7 @@
                         <img src="images/oldman-m-small.jpg" class="img-fluid" alt="old man sitting by the ocean">
                     </picture>
                 </div>
-                <div class="col">
+                <div class="col-3 p-0 m-0">
                     <picture>
                         <source srcset="images/jeanjacket-m-small.jpg,
                         images/jeanjacket-m-medium.jpg 2x, 
