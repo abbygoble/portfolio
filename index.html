@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
 </head>
 <body>
     <div class="d-none d-md-block bg-primary">
@@ -37,7 +38,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="nav list-unstyled">
-                    <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="hvr-grow nav-link text-uppercase josefin text-black" href="index.html">home</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="shop.html">shop</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="about.html">about us</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="#contact">contact us</a></li>
@@ -55,25 +56,81 @@
             <li><input class="m-2" type="text" placeholder="search"><i class="bi bi-search"></i></li>
         </ul>
     </nav>
-    <!-- container for old fart army -->
-    <div>
-        <img src="images/of1.png" class="img-fluid" alt="old fart army banner">
+    <div class="d-block d-md-none">
+        <!-- container for old fart army -->
+        <div>
+            <img src="images/of1.png" class="img-fluid" alt="old fart army banner">
+        </div>
+        <!-- container for about and papa pic -->
+        <div>
+            <img src="images/papa.JPG" class="img-fluid" alt="founding father in field">
+        </div>
+        <!-- container for anniversary sale -->
+        <div>
+            <img src="images/of2.png" class="img-fluid" alt="forever after all anniversary sale">
+        </div>
     </div>
-    <!-- container for about and papa pic -->
-    <div>
-        <img src="images/papa.JPG" class="img-fluid" alt="founding father in field">
-    </div>
-    <!-- container for anniversary sale -->
-    <div>
-        <img src="images/of2.png" class="img-fluid" alt="forever after all anniversary sale">
-    </div>
-    <h2 class="text-uppercase josefin d-none d-md-block">featured products</h2>
+    <!-- section for images in medium and large viewport -->
+    <section class="d-none d-md-block">
+        <div class="d-flex">
+            <div class="w-50">
+                <picture>
+                    <source srcset="images/billandtom-349_x_162.png"
+                                media="(max-width: 349px)">
+                    <source srcset="images/billandtom-855_x_398.png"
+                                media="(max-width: 855px)">
+                    <img src="images/billandtom-855_x_398.png"
+                             alt="bill and tom"
+                             class="img-fluid"
+                             sizes="(max-width: 349px) 100vw,
+                             (max-width: 855px) 100vw">
+                </picture>
+                <picture>
+                    <source srcset="images/forever-349_x_162.png"
+                                media="(max-width: 349px)">
+                    <source srcset="images/forever-855_x_398.png"
+                                media="(max-width: 855px)">
+                    <img src="images/forever-855_x_398.png"
+                             alt="anniversary sale"
+                             class="img-fluid"
+                             sizes="(max-width: 349px) 100vw,
+                             (max-width: 855px) 100vw">
+                </picture>
+            </div>
+            <div class="w-50">
+                <picture>
+                    <source srcset="images/ofa-366_x_353.png"
+                                media="(max-width: 366px)">
+                    <source srcset="images/ofa-925_x_925.png"
+                                media="(max-width: 925px)">
+                    <img src="images/ofa-925_x_925.png"
+                             alt="old fart army promo"
+                             class="img-fluid"
+                             sizes="(max-width: 3669px) 100vw,
+                             (max-width: 925px) 100vw">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="text-uppercase josefin d-none d-md-flex justify-content-center p-3">featured products</h2>
     <p class="d-none d-lg-block">Take a look at our Signature Products</p>
     <!-- contains items for sale -->
     <div class="container-fluid p-0 m-0">
         <div class="row p-0 m-0">
             <!--wallet -->
             <div class="col-3 p-0 m-0">
+                <picture>
+                    <source srcset="images/ofa-366_x_353.png"
+                                media="(max-width: 366px)">
+                    <source srcset="images/ofa-925_x_925.png"
+                                media="(max-width: 925px)">
+                    <img src="images/ofa-925_x_925.png"
+                             alt="old fart army promo"
+                             class="img-fluid"
+                             sizes="(max-width: 3669px) 100vw,
+                             (max-width: 925px) 100vw">
+                </picture>
                 <picture class="m-0 p-0">
                     <source srcset="images/wallet-small.jpg,
                     images/wallet-medium 2x,
@@ -179,44 +236,60 @@
     </div>
     <!-- container for green background -->
     <div class="bg-primary">
-        <h3 class="text-center josefin">Check out our Instagram</h3>
+        <h3 class="text-center josefin d-block d-md-none pt-2">Check out our Instagram</h3>
         <!-- container for instagram images -->
-        <div class="container-fluid p-0 m-0">
-            <div class="row no-gutters">
-                <div class="col-3 p-0 m-0">
+        <div class="container-fluid p-0 m-0 d-block d-md-none">
+            <div class="d-flex flex-row w-100 d-block d-md-none">
+                <div>
                     <picture>
-                        <source srcset="images/oldcouple-m-small.jpg,
-                        images/oldcouple-m-medium.jpg 2x, 
-                        images/oldcouple-m-large.jpg 3x"
-                        media="(max-width: 390px)">
-                        <img src="images/oldcouple-m-small.jpg" class="img-fluid" alt="cute old couple">
+                        <source srcset="images/oldcouple-m-small.jpg"
+                                    media="(max-width: 98px)">
+                        <source srcset="images/oldcouple-m-medium.jpg"
+                                    media="(max-width: 196px)">
+                        <img src="images/oldcouple-m-medium.jpg"
+                                 alt="old fart couple"
+                                 class="img-fluid"
+                                 sizes="(max-width: 98px) 25vw,
+                                 (max-width: 196px) 25vw">
                     </picture>
                 </div>
-                <div class="col-3 p-0 m-0">
+                <div>
                     <picture>
-                        <source srcset="images/windbreaker-square-m-small.jpg,
-                        images/windbreaker-square-m-medium.jpg 2x,
-                        images/windbreaker-square-m-large.jpg 3x"
-                        media="(max-width: 390px">                
-                        <img src="images/windbreaker-square-m-small.jpg" class="img-fluid" alt="windbreaker in black">
+                        <source srcset="images/windbreaker-square-m-small.jpg"
+                                    media="(max-width: 98px)">
+                        <source srcset="images/windbreaker-square-m-medium.jpg"
+                                    media="(max-width: 196px)">
+                        <img src="images/windbreaker-square-m-medium.jpg"
+                                 alt="windbreaker"
+                                 class="img-fluid"
+                                 sizes="(max-width: 98px) 25vw,
+                                 (max-width: 196px) 25vw">
                     </picture>
                 </div>
-                <div class="col-3 p-0 m-0">
+                <div>
                     <picture>
-                        <source srcset="images/oldman-m-small.jpg,
-                        images/oldman-m-medium.jpg 2x, 
-                        images/oldman-m-large.jpg 3x"
-                        media="(max-width: 390px)">
-                        <img src="images/oldman-m-small.jpg" class="img-fluid" alt="old man sitting by the ocean">
+                        <source srcset="images/oldman-m-smalll.jpg"
+                                    media="(max-width: 98px)">
+                        <source srcset="images/oldman-m-medium.jpg"
+                                    media="(max-width: 196px)">
+                        <img src="images/oldman-m-medium.jpg"
+                                 alt="old fart by the sea"
+                                 class="img-fluid"
+                                 sizes="(max-width: 98px) 25vw,
+                                 (max-width: 196px) 25vw">
                     </picture>
                 </div>
-                <div class="col-3 p-0 m-0">
+                <div>
                     <picture>
-                        <source srcset="images/jeanjacket-m-small.jpg,
-                        images/jeanjacket-m-medium.jpg 2x, 
-                        images/jeanjacket-m-large.jpg 3x"
-                        media="(max-width: 390px)">
-                        <img src="images/jeanjacket-m-small.jpg" class="img-fluid" alt="cute old couple">
+                        <source srcset="images/jeanjacket-m-small.jpg"
+                                    media="(max-width: 98px)">
+                        <source srcset="images/jeanjacket-m-medium.jpg"
+                                    media="(max-width: 196px)">
+                        <img src="images/jeanjacket-m-medium.jpg"
+                                 alt="jean jacket"
+                                 class="img-fluid"
+                                 sizes="(max-width: 98px) 25vw,
+                                 (max-width: 196px) 25vw">
                     </picture>
                 </div>
             </div>
