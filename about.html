@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 </head>
 <body>
+    <!-- social media icons -->
     <div class="d-none d-md-block bg-primary">
         <div class="d-flex justify-content-end">
             <i class="bi bi-facebook p-1"></i>
@@ -28,7 +29,7 @@
         <!-- site slogan -->
         <h2 class="text-uppercase text-center pb-3 josefin">wiser. kinder. better.</h2>
     </header>
-    <!-- establishes main navigation -->
+    <!-- establishes main navigation for mobile-->
     <nav class="navbar d-md-none" role="navigation">
         <div class="container-fluid">
             <input type="text" placeholder="search">
@@ -46,6 +47,7 @@
             </div>
        </div>
     </nav>
+    <!-- establishes main nav for tablet and beyond -->
     <nav class="bg-primary d-none d-md-block" role="navigation">
         <ul class="nav d-flex justify-content-evenly align-items-center">
             <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="index.html">home</a></li>
@@ -55,7 +57,7 @@
             <li><input class="m-2" type="text" placeholder="search"><i class="bi bi-search"></i></li>
         </ul>
     </nav>
-
+    <!-- grid layout for tablet and larger sizes -->
     <section class="d-none d-md-block">
         <div class="container-fluid p-0 m-0">
             <div class="row p-0 m-0">
@@ -97,7 +99,8 @@
         </div>
     </section>
     <div>
-        <section class="d-block d-md-none">
+        <!-- content not visible beyond small viewport -->
+        <section class="d-block d-md-none m-2">
             <!-- structures blue card -->
             <div class="bg-info p-3">
                 <div>
@@ -108,6 +111,7 @@
                 </div>
             </div>
         </section>
+        <!-- establishes container for available at content and grid -->
         <h3 class="josefin text-center text-uppercase pt-3">Available At</h3>
         <div class="container">
             <div class="row">
@@ -126,30 +130,31 @@
             </div>
         </div>
         <section>
-        <!-- structures green background -->
-        <div class="bg-secondary d-none d-md-block mb-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-5 p-3">
-                        <img src="images/graphictee.jpg" class="img-fluid" alt="graphic tee">
-                    </div>
-                    <div class="col-7 p-3">
-                        <h2 class="text-uppercase josefin">contact us</h2>
-                        <!-- establishes form format -->
-                        <form role="form" action="thanks.html" method="get">
-                            <label for="fullname">Name</label> <br>
-                            <input type="text" id="fullname" placeholder="John Doe"> <br>
-                            <label for="email">Email</label> <br>
-                            <input type="email" id="email" placeholder="johndoe@email.com"> <br>
-                            <label for="tel">Phone Number</label> <br>
-                            <input type="tel" id="tel" placeholder="(888)888-8888"> <br>
-                            <label for="message">Your message</label> <br>
-                            <textarea id="message"></textarea>
-                        </form>
+            <!-- structures green background -->
+            <div class="bg-secondary d-none d-md-block mb-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-5 p-3">
+                            <img src="images/graphictee.jpg" class="img-fluid" alt="graphic tee">
+                        </div>
+                        <div class="col-7 p-3">
+                            <h2 class="text-uppercase josefin">contact us</h2>
+                            <!-- establishes form format -->
+                            <form role="form" action="thanks.html" method="get">
+                                <label for="fullname">Name</label> <br>
+                                <input type="text" id="fullname" placeholder="John Doe"> <br>
+                                <label for="email">Email</label> <br>
+                                <input type="email" id="email" placeholder="johndoe@email.com"> <br>
+                                <label for="tel">Phone Number</label> <br>
+                                <input type="tel" id="tel" placeholder="(888)888-8888"> <br>
+                                <label for="message">Your message</label> <br>
+                                <textarea id="message"></textarea>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- giving back grid -->
             <div class="container-fluid bg-primary mb-5 d-none d-md-block">
                 <div class="row">
                     <div class="col-6 p-3">
@@ -164,6 +169,7 @@
                 </div>
             </div>
         </section>
+        <!-- mobile contact session with pure button -->
         <section class="d-block d-md-none">
             <div id="contact" class="bg-primary">
                 <h4 class="josefin text-center p-3">Get in Touch</h4>
