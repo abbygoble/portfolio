@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- adds bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- adds main.css -->
     <link href="css/main.css" rel="stylesheet">
+    <!-- adds josefin from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- establishes social media section -->
     <div class="d-none d-md-block bg-primary">
         <div class="d-flex justify-content-end">
             <i class="bi bi-facebook p-1"></i>
@@ -27,7 +31,7 @@
         <!-- site slogan -->
         <h2 class="text-uppercase text-center pb-3 josefin">wiser. kinder. better.</h2>
     </header>
-    <!-- establishes main navigation -->
+    <!-- establishes main navigation for mobile-->
     <nav class="navbar d-md-none" role="navigation">
         <div class="container-fluid">
             <input type="text" placeholder="search">
@@ -41,11 +45,11 @@
                     <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="shop.html">shop</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="about.html">about us</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase josefin text-black" href="#contact">contact us</a></li>
- 
                 </ul>
             </div>
        </div>
     </nav>
+    <!-- establishes nav for tablet and beyond -->
     <nav class="bg-primary d-none d-md-block" role="navigation">
         <ul class="nav d-flex justify-content-evenly align-items-center">
             <li class="nav-item"><a class="hvr-grow nav-link text-uppercase josefin text-black" href="index.html">home</a></li>
@@ -55,6 +59,7 @@
             <li><input class="m-2" type="text" placeholder="search"><i class="bi bi-search"></i></li>
         </ul>
     </nav>
+    <!-- images/banners that show in small viewport but not beyond -->
     <div class="d-block d-md-none">
         <!-- container for old fart army -->
         <div>
@@ -105,7 +110,7 @@
             </div>
         </div>
     </section>
-
+    <!-- featured products that show in varying viewports -->
     <h2 class="text-uppercase josefin d-none d-md-flex justify-content-center p-3">featured products</h2>
     <p class="d-none d-lg-block">Take a look at our Signature Products</p>
     <!-- contains items for sale -->
@@ -304,7 +309,9 @@
             </div>
         </div>
     </div>
+    <!-- container for cards in medium viewport -->
     <section class="d-none d-md-flex d-lg-none flex-row">
+        <!-- get to know us card for medium viewport -->
         <div class="bg-primary m-5">
             <img src="images/papa-284_x_372.JPG" class="img-fluid p-3" alt="papa">
             <div class="p-3 pt-0">
@@ -312,6 +319,7 @@
                 <p>Old Fart Clothing Company specializes in clothing and novelty items targeted towards an older crowd because we get it - you want comfort, quality, and the leave a positive impact on the world…</p>
             </div>
         </div>
+        <!-- giving back section for medium viewport -->
         <div class="bg-primary m-5">
             <img src="images/POSTERBH-284_x_372.png" class="img-fluid p-3" alt="old farts big hearts">
             <div class="p-3 pt-0">
@@ -320,6 +328,7 @@
             </div>
         </div>
     </section>
+    <!-- establishes footer structure -->
     <footer>
         <section>
                 <div class="bg-warning d-flex flex-row">
