@@ -55,7 +55,7 @@
             <li><input class="m-2" type="text" placeholder="search"><i class="bi bi-search"></i></li>
         </ul>
     </nav>
-    <div class="container-flex">
+    <div class="container-flex p-2">
         <div class="row">
             <div class="col-6 col-md-3">
                 <picture>
@@ -171,7 +171,7 @@
     <picture>
         <img src="images/popup.jpg" class="img-fluid d-block d-md-none" srcset="old fart pop up store">
     </picture>
-    <div class="container-fluid m-3">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-6 col-md-3">
                 <picture>
@@ -303,36 +303,44 @@
             </div>
         </div>
     </div>
-        <!-- establishes footer structure -->
-        <footer>
-            <!-- container for blue backgorund -->
-            <div class="bg-warning">
-                <!-- logo -->
-                <img>
-                <div>
-                    <h4><a class="text-white" href="#header">Back to Top</a></h4>
-                    <img>
-                    <img>
-                    <img>
+    <footer>
+        <section>
+                <div class="bg-warning d-flex flex-row mt-2">
+                    <div class="p-3">
+                        <img src="images/ofc-logo.png" class="img-fluid" alt="logo">
+                        <h2 class="d-none d-lg-block text-white">A Proudly Canadian Company</h2>
+                    </div>
+                        <div class="flex-column p-3 d-none d-md-block">
+                            <div class="p-0">
+                                <a href="#header" class="text-decoration-none text-white">Back To Top</a>
+                            </div>
+                            <div class="p-0">
+                                <img src="images/visa-85_x_85.png" class="img-fluid" alt="visa logo">
+                            </div>
+                            <div class="p-0">
+                                <img src="images/mastercard-85_x_51.png" class="img-fluid" alt="mastercard logo">
+                            </div>
+                            <div class="p-0">
+                                <img src="images/interac-85_x_85.png" class="img-fluid" alt="interac logo">
+                            </div>
+                        </div>
+                    <div class="p-3">
+                        <h2 class="text-white pt-4">Take Me There</h2>
+                        <nav class="text-white">
+                            <ul class="list-unstyled">
+                                <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">home</a></li>
+                                <li class="nav-item"><a class="nav-link text-uppercase" href="shop.html">shop</a></li>
+                                <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">about us</a></li>
+                                <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-
-                <h4 class="text-white">Take Me There</h4>
-                 <!-- container for footer nav -->
-                 <nav>
-                    <ul class="nav list-unstyled">
-                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="index.html">home</a></li>
-                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="shop.html">shop</a></li>
-                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="about.html">about us</a></li>
-                        <li class="nav-item"><a class="nav-link text-uppercase text-white" href="#contact">contact us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- container for green copyright -->
-            <div class="bg-secondary">
-                <!-- copyright info -->
+            <div class="bg-secondary p-0 m-0">
                 <p class="d-flex justify-content-end p-2">Copyright © 2023 Old Fart Clothing Company</p>
             </div>
-        </footer>
+        </section>
+    </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
