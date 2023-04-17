@@ -17,3 +17,5 @@ Image Sources
 All images that were not personal property were taken from the site Unsplash (free photo site)
 Due to lack of clothing items having been produced by company at time of coding, most images are not personal property.  However, as clothing items are created, stock images will be replaced.
 
+Social Media Links are not currently set up as accounts have not yet been created
+
